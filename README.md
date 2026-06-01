@@ -14,3 +14,14 @@ The Project about PCB and code connect to klipper on raspbery pi
 - cap 100uf
 - wire (red,black,green)
 
+# How to use
+# Software configuration
+Once built and connected to your Klipper host, use the provided Klipper config file.
+
+You need at least to set the serial path in the [mcu ...] of the provided klipper configuration file.
+To find the serial of your Arduino Nano:
+- BEFORE connecting the Nano with USB on the Raspberry Pi, connect to the Pi using SSH and run the command ls /dev/serial/by-id/. Note the result.
+- Connect the Nano with USB on the Pi, wait a few seconds for the Pi to detect the USB device, and re-run the same command as before.
+- A new "file" should be there, looking like usb-1a86_USB2.0-Serial-if00-port0: it represents your Arduino Nano
+- Change the serial setting value in the Klipper configuration using the full path to the serial file. e.g.: serial: /dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0
+## D
