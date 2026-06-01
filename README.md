@@ -24,4 +24,5 @@ To find the serial of your Arduino Nano:
 - Connect the Nano with USB on the Pi, wait a few seconds for the Pi to detect the USB device, and re-run the same command as before.
 - A new "file" should be there, looking like usb-1a86_USB2.0-Serial-if00-port0: it represents your Arduino Nano
 - Change the serial setting value in the Klipper configuration using the full path to the serial file. e.g.: serial: /dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0
-## D
+## Ddsada
+đasadsa
